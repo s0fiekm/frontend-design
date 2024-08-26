@@ -1,3 +1,25 @@
 @layer exercise;
 
 @import "../style.css" layer(exercise);
+
+.card:not(:has(img)):not(:has(h3)) .content p {
+    font-size: 1.25rem; 
+    line-height: 1.4; 
+}
+
+/* kort uden billeder */
+.card:not(:has(img)) h3 {
+    font-size: 1.6rem; 
+}
+
+/* kort med billeder */
+.card:has(img) {
+    padding: 0;
+
+}
+
+.card:has(img) .content {
+    padding: 15px; 
+}
+
+
