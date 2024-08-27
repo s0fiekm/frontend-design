@@ -15,7 +15,6 @@
 
 /* Begynd her... */
 
-/*kan ikke finde ud af opgaven: For alle elementer, der kommer lige efter h3, reducér —flow-space til .25rlh.*/ 
 
 article {
     > * {
@@ -30,7 +29,7 @@ article {
         margin-block-start: var(--flow-space, 1rlh)
     }
 
-    h3 + * {
+    h3 + p {
         margin-block-start: var(--flow-space, 0.25rlh)
     }
 }
