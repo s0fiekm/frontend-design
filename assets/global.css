@@ -2,6 +2,7 @@
 
 @import "../style.css" layer(exercise);
 
+/*kort uden billeder og h3*/
 .card:not(:has(img)):not(:has(h3)) .content p {
     font-size: 1.25rem; 
     line-height: 1.4; 
@@ -15,11 +16,10 @@
 /* kort med billeder */
 .card:has(img) {
     padding: 0;
-
 }
 
 .card:has(img) .content {
-    padding: 15px; 
+    padding: 1rem; 
 }
 
 
