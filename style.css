@@ -9,8 +9,36 @@
     --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+gap: 2rem;
+  
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: turquoise;
+        line-height: 2;
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+
+}
