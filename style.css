@@ -1,2 +1,63 @@
-/* Dine styles her */
-article {}
+:root {
+    background: #E3EDFB;
+
+    --color-icon: #0B3A67;
+
+    --image-width: 8rem;
+    --card-padding: 1rem;
+
+    --font-heading: 1.75rem;
+
+    /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
+    --hide-overlay: 1;
+}
+
+
+/* Begynd her... */
+
+/*kan ikke finde ud af opgaven: For alle elementer, der kommer lige efter h3, reducér —flow-space til .25rlh.*/ 
+
+article {
+    > * {
+        margin-block-start: var(--flow-space, 0.5rlh);
+    }
+
+    h2 {
+        margin-block-start: var(--flow-space, 2rlh)
+    }
+
+    h3 {
+        margin-block-start: var(--flow-space, 1rlh)
+    }
+
+    h3 + * {
+        margin-block-start: var(--flow-space, 0.25rlh)
+    }
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+gap: 2rem;
+  
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: turquoise;
+        line-height: 2;
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+}
