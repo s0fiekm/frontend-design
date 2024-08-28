@@ -10,7 +10,8 @@ article {
         0 20px 25px -5px rgba(0, 0, 0, 0.1),
         0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-radius: 1rem;
-    border: 1px solid #DADCEB;
+    border: 1px solid #DADCEB;   
+  
 }
 
 .picture {
@@ -25,7 +26,9 @@ article {
         place-self: start;
         margin: 1rem;
         z-index: 1;
-        color: #fff;
+        color: tomato;
+        border-radius: 50%;
+        background-color: #fff;
     }
 
     .image-count {
@@ -33,8 +36,8 @@ article {
         border-radius: 1rem;
         letter-spacing: 2px;
         line-height: 1;
-        place-self: end;
-        background: #BDC4CE;
+        place-self: end start;
+        background: #8c8d8e;
         color: #fff;
         margin: 1rem;
     }
@@ -48,27 +51,31 @@ article {
 .card-content {
     display: grid;
     gap: 1rem;
+    margin-block-start: var(--flow-space, 1.25em);
     padding: 0 2rem 1rem;
 }
 
 .title {
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
     font-size: 2rem;
-    color: #3C55CC;
+    color: #181717;
 }
 
 .location {
-    color: #C8C9CB;
+    color: #8c8d8e;
     text-transform: uppercase;
     font-size: .95em;
 }
 
 .description p {
-    text-align: center;
+   text-wrap: balance;
+   color: #b3b5bd;
 }
 
 .amenities-details {
+    border-top: 1px solid #dcdcdf;
+    border-bottom: 1px solid #dcdcdf;
     display: flex;
     gap: 1rem;
 
@@ -78,8 +85,7 @@ article {
         gap: .75rem;
         place-items: center;
         padding: .25rem;
-        background: #F0F2FF;
-        color: #3C55CC;
+        color: #b3b5bd;
     }
 }
 
@@ -102,8 +108,8 @@ footer {
         border-radius: 8px;
         font-weight: 500;
         font: inherit;
-        background: #F0F2FF;
-        color: #3C55CC;
+        background:#3C55CC ;
+        color: #F0F2FF;
     }
 
     .price {
@@ -116,13 +122,6 @@ footer {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 
